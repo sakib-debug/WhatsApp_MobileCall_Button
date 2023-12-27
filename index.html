@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Landing Page</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 50px;
+    }
+    .product {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    .product img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .product-info {
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #25D366;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #128C7E;
+    }
+    
+    
+    /* CSS styles */
+    .whatsapp-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #25D366; /* Nice color - you can change this */
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #128C7E; /* Nice color on hover - you can change this */
+    }
+  </style>
+ 
+</head>
+<body>
+
+<div class="container">
+  <div class="product">
+    <div class="product-info">
+      <h1>Product Name</h1>
+      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <a href="tel:+819063570546" class="btn">Call Now to Buy</a>
+    </div>
+    <img src="https://img.kwcdn.com/product/1e133b33a56/13a3b030-ec90-4295-a351-486a2e383c59_1558x1558.jpeg?imageView2/2/w/800/q/70/format/webp" alt="Product Image">
+    <img src="https://img.kwcdn.com/product/1e133b33a56/13a3b030-ec90-4295-a351-486a2e383c59_1558x1558.jpeg?imageView2/2/w/800/q/70/format/webp" alt="Product Image">
+    <img src="https://img.kwcdn.com/product/1e133b33a56/13a3b030-ec90-4295-a351-486a2e383c59_1558x1558.jpeg?imageView2/2/w/800/q/70/format/webp" alt="Product Image">
+    <img src="https://img.kwcdn.com/product/1e133b33a56/13a3b030-ec90-4295-a351-486a2e383c59_1558x1558.jpeg?imageView2/2/w/800/q/70/format/webp" alt="Product Image">
+  </div>
+</div>
+
+<div>
+
+<button class="whatsapp-btn" onclick="sendMessage()">Send WhatsApp Message</button>
+
+<script>
+  function sendMessage() {
+    var phoneNumber = '+819063570546'; // Replace with your WhatsApp number
+    var whatsappURL = 'https://wa.me/' + phoneNumber;
+    window.open(whatsappURL, '_blank');
+  }
+</script></div>
+
+</body>
+</html>
